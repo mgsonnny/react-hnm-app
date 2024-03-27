@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b43019d.css",
-    "main.js": "/static/js/main.e4c80b1b.js",
-    "static/js/453.53dae259.chunk.js": "/static/js/453.53dae259.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.3b43019d.css.map": "/static/css/main.3b43019d.css.map",
-    "main.e4c80b1b.js.map": "/static/js/main.e4c80b1b.js.map",
-    "453.53dae259.chunk.js.map": "/static/js/453.53dae259.chunk.js.map"
+    "main.css": "/react-hnm-app/static/css/main.3b43019d.css",
+    "main.js": "/react-hnm-app/static/js/main.368f00f9.js",
+    "static/js/453.53dae259.chunk.js": "/react-hnm-app/static/js/453.53dae259.chunk.js",
+    "static/media/logo.svg": "/react-hnm-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-hnm-app/index.html",
+    "main.3b43019d.css.map": "/react-hnm-app/static/css/main.3b43019d.css.map",
+    "main.368f00f9.js.map": "/react-hnm-app/static/js/main.368f00f9.js.map",
+    "453.53dae259.chunk.js.map": "/react-hnm-app/static/js/453.53dae259.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b43019d.css",
-    "static/js/main.e4c80b1b.js"
+    "static/js/main.368f00f9.js"
   ]
 }
