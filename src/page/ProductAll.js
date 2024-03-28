@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../component/ProductCard';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const ProductAll = () => {
 
     const [productList, setProductList] = useState([]);
 
     const getProducts = async()=>{
-        let url = 'http://localhost:5000/products'
+        let url = 'https://my-json-server.typicode.com/mgsonnny/react-hnm/products'
         let response = await fetch(url)
         let data = await response.json()
         console.log("data:", data)
@@ -17,7 +18,14 @@ const ProductAll = () => {
     },[])
   return (
     <div>
-      <ProductCard/>
+        <Container>
+            <Row >
+                {productList.map(menu=>(
+                    <Col className='product-card' lg={3}><ProductCard item={menu}/></Col>
+                ))}
+            </Row>
+        </Container>
+      
     </div>
   )
 }
