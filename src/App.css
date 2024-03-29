@@ -35,40 +35,33 @@
 }
 
 .search-area {
-  /* margin-left: auto; */
-  position: absolute; /* 아이콘을 절대 위치로 설정합니다. */
-  right: 250px;
-  /* position: relative; 
-  justify-content: center;
-  display: flex; 
-  align-items: center; */
+  border-bottom: 1px solid black;
+  position: absolute;
+  right: 20px;
+  padding: 5px;
 }
 
 
-.input-box {
-  border: none; /* 기본 테두리를 제거합니다. */
-  border-bottom: 1px solid #ced4da; /* 밑줄 테두리를 추가합니다. */
-  padding: 1px; /* 내부 여백을 추가하여 텍스트와 입력 상자의 경계를 정의합니다. */
-  padding-left: 30px;
-  width: 70%; /* 부모 요소의 100% 폭을 사용하도록 설정합니다. */
-  font-size: 1rem; /* 텍스트 크기를 설정합니다. */
-  outline: none; /* 포커스된 상태에서의 테두리를 제거합니다. */
-
+.search-area input {
+  border:none;
+  margin-left:5px;
 }
 
-/* 포커스된 상태에서의 밑줄 색상을 변경할 수 있습니다. */
-.input-box:focus {
-  border-bottom-color: blue; /* 포
-  커스된 상태에서의 밑줄 색상을 파란색으로 변경합니다. */
+.search-area input:focus {
+  outline:none;
+  border-bottom-color: blue;
 }
+
 
 .search-icon{
   position: absolute; /* 아이콘을 절대 위치로 설정합니다. */
   left: 1px; /* 아이콘의 위치를 조정합니다. */
   color: gray; /* 아이콘 색상을 지정합니다. */
 }
+
 .product-card:hover {
   transform: scale(1.1);
+  z-index: 1;
 }
 
 .product-img{
@@ -104,3 +97,77 @@
   margin: 10px;
   text-align: center;
 }
+
+.sidebar{
+  width:300px;
+  height:100%;
+  background: #222;
+  position: fixed;
+  top:0;
+  left: -300px;
+  z-index: 1;
+  transition: all .35S;
+}
+input:checked + laber + div{
+  left:0;
+}
+
+.burger-menu{
+  margin-left: 20px;
+}
+
+.hide{
+  visibility:hidden
+}
+
+@media screen and (max-width: 63rem) {
+  .hide {
+    visibility:visible;
+  }
+  .menu-list {
+    display: none;
+  }
+  .search-area{
+    display: none;
+  }
+}
+
+.side-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: burlywood;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index:2
+}
+.side-menu-list button {
+  margin: 5px;
+  border: none;
+  background: none;
+  width: 120px;
+}
+.side-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border: none;
+  background: none;
+}
+
+.side-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-menu-list button:hover {
+  background-color: beige;
+  border-radius: 3px;
+} 

@@ -11,6 +11,7 @@ const ProductDetail = () => {
     const[product, setProduct] = useState(null);
     const getProductDetail=async()=>{
         let url = `https://my-json-server.typicode.com/mgsonnny/react-hnm-app/products/${id}`
+        // let url = `http://localhost:5000/products/${id}`
         let response = await fetch(url)
         let data = await response.json()
         console.log("data", data)
@@ -24,7 +25,7 @@ const ProductDetail = () => {
         <Container>
             <Row>
                 <Col className='product-img'>
-                    <img src={product?.img}/>
+                    <img src={product?.img} alt="Product img"/>
                 </Col>
                 <Col>
                     <div className='product-detail-title'>
