@@ -1,3 +1,7 @@
+body{
+  font-family: sans-serif;
+}
+
 .login-button{
   display: flex;
   justify-content: flex-end;
@@ -34,6 +38,30 @@
   padding: 10px;
 }
 
+.card{
+  border:none !important;
+  margin-bottom: 10px;
+  
+}
+
+.card-img{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.choice{
+  font-size:11px;
+  color: #63786a;
+  font-weight: bold;
+  height: 20px;
+}
+
+.new-product {
+  font-size: 11px;
+  height: 20px;
+}
+
 .search-area {
   border-bottom: 1px solid black;
   position: absolute;
@@ -67,34 +95,37 @@
 .product-img{
   display: flex;
   justify-content: flex-end;
-  height: 500px
+  height: 500px;
+  width: 100%;
 }
+
+
 
 .product-detail-title{
   font-size: 20px;
   font-family: 'Arial', sans-serif;
-  margin: 10px
+  margin-top: 10px
 }
 
 .product-detail-price{
   font-size: 30px;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
-  margin: 10px
+  margin-top: 10px
 }
 
 .product-detail-choice{
   font-size: 10px;
   font-family: 'Arial', sans-serif;
-  margin: 10px;
+  margin-top: 10px;
 }
 .product-detail-button{
-  margin: 10px;
+  margin-top: 10px;
 }
 .product-detail-add{
   background-color: black;
-  width:500px;
-  margin: 10px;
+  width:50%;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -129,6 +160,13 @@ input:checked + laber + div{
   }
   .search-area{
     display: none;
+  }
+  .product-detail-add{
+    background-color: black;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
