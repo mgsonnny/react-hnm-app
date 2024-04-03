@@ -6,13 +6,14 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Button from "react-bootstrap/Button";
 import { productAction } from "../redux/actions/productAction";
 import { UseDispatch, useDispatch, useSelector } from "react-redux";
+import { fetchProductsDetail } from "../redux/reducers/productSlice";
 
 const ProductDetail = () => {
   let { id } = useParams();
   const product = useSelector((state) => state.product.selectedItem);
   const dispatch = useDispatch();
   const getProductDetail = () => {
-    dispatch(productAction.getProductDetail(id));
+    dispatch(fetchProductsDetail(id));
   };
   // console.log("data", data)
   // setProduct(data);
